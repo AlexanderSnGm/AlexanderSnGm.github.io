@@ -1,0 +1,1113 @@
+@charset "utf-8";
+/***************************************************************************************
+* BODY ELEMENTS
+***************************************************************************************/
+
+body {
+	-webkit-font-smoothing: antialiased;
+}
+div {
+}
+hr {
+}
+img {
+}
+a {
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+/***************************************************************************************
+* HEADINGS
+***************************************************************************************/
+
+/* All Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 10px;
+	font-family: "itcfranklingothic_lt_bookcpRg", Helvetica, Arial, sans-serif;
+}
+/* Individual Headings */
+h1 {
+}
+h2 { /*font-size: 48px;*/
+}
+h3 {
+}
+h4 {
+}
+h5 {
+}
+h6 {
+}
+/***************************************************************************************
+* PARAGRAPHS
+***************************************************************************************/
+
+/* First Paragraph */
+p {
+	font-family: "museo_sans100", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 24px;
+}
+/* Seccond Paragraph */
+abbr {
+}
+b {
+}
+/* Blockquote */
+blockquote {
+}
+cite {
+}
+/* Third Paragraph */
+dfn {
+}
+del {
+}
+em {
+}
+i {
+}
+strong {
+}
+ins {
+}
+small {
+}
+/* Quote */
+q {
+}
+/* Fourth Paragraph */
+sub {
+}
+sup {
+}
+/***************************************************************************************
+* LISTS
+***************************************************************************************/
+
+/* All Lists */
+dl,
+ol,
+ul {
+}
+/* Definition Lists */
+dl {
+}
+dt {
+}
+dd {
+}
+/* Ordered Lists */
+ol {
+}
+ol li {
+}
+/* Unordered Lists */
+ul {
+}
+ul li {
+}
+/***************************************************************************************
+* FORMS
+***************************************************************************************/
+
+form {
+}
+fieldset {
+}
+legend {
+}
+label {
+}
+/* Inputs */
+input {
+}
+textarea {
+}
+textarea:focus {
+	outline: none;
+}
+/* Other */
+select {
+}
+optgroup {
+}
+/***************************************************************************************
+* TABLES
+***************************************************************************************/
+
+table {
+}
+caption {
+}
+tr {
+}
+/* Head */
+thead {
+}
+th {
+}
+/* Body */
+tbody {
+}
+td {
+}
+/* Foot */
+tfoot {
+}
+/***************************************************************************************
+* OTHER
+***************************************************************************************/
+
+address {
+}
+code {
+}
+samp {
+}
+pre {
+}
+kbd {
+}
+var {
+}
+/***************************************************************************************
+    0. Helpers
+    1. Main Navigation
+    2. Welcome message
+    3. About the wedding
+    4. About us
+    5. Gallery
+    6. Gifts
+    7. General Information
+    8. Messages
+    9. RSVP
+    10. Footer
+    11. Custom form elements
+***************************************************************************************/
+
+#main-container {
+	height: 100%;
+	overflow: hidden;
+}
+#wrapper {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	overflow-y: scroll; /* has to be scroll, not auto */
+	-webkit-overflow-scrolling: touch;
+}
+.cont_layer {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+.cont_layer .cont_map {
+	position: relative;
+	background: #ff6666;
+	/*width: 80%;*/
+	height: 100%;
+	margin: 0 auto;
+	padding: 1%;
+}
+.cont_layer .cont_map a.exit,
+.cont_layer .cont_img a.exit {
+	position: absolute;
+	right: -32px;
+	top: -32px;
+}
+.cont_layer .cont_map span.glyphicon-remove-circle,
+.cont_layer .cont_img span.glyphicon-remove-circle {
+	font-size: 30px;
+}
+.cont_layer .cont_map span.glyphicon-remove-circle {
+	color: #ff6666;
+}
+.cont_layer .cont_img span.glyphicon-remove-circle {
+	color: #fff;
+}
+.cont_layer .cont_img {
+	position: relative;
+	display: inline-block;
+	max-width: 600px;
+	background: #FFF;
+	margin: 0 auto;
+	padding: 1.5%;
+}
+.cont_layer .cont_img img {
+	width: 100%;
+}
+.cont_layer .cont_img a.prev,
+.cont_layer .cont_img a.next {
+	position: absolute;
+	color: #fff;
+	font-size: 20px;
+	top: 50%;
+	margin-top: -10px;
+}
+.cont_layer .cont_img a.prev {
+	left: -30px;
+}
+.cont_layer .cont_img a.next {
+	right: -30px;
+}
+#matrimonio,
+#nosotros,
+#album,
+#regalos,
+#informacion {
+	padding: 50px 0;
+}
+/* h3 fix */
+
+
+#regalos p,
+#informacion p {
+	margin-bottom: 35px
+}
+#mensajes {
+	padding: 120px 0 50px;
+}
+#rsvp {
+	padding: 100px 0;
+	background: #ff6666 url(assets/backgrounds/rsvp_shadow.png) repeat-x;
+}
+ @media (max-width: 767px) {
+#matrimonio,
+ #nosotros,
+ #album,
+ #regalos,
+ #informacion,
+ #mensajes,
+ #rsvp {
+	padding: 25px 0;
+}
+/*regalos*/
+#informacion .col-sm-4,
+ #regalos .col-sm-4 {
+	text-align: center;
+}
+.gift .cont_img {
+	padding-bottom: 30px
+}
+}
+.museo100 {
+	font-family: "museo_sans100", Helvetica, Arial, sans-serif;
+}
+.museo500 {
+	font-family: "museo_sans500", Helvetica, Arial, sans-serif;
+}
+.museo700 {
+	font-family: "museo_sans700", Helvetica, Arial, sans-serif;
+}
+.franklingothic_bookcpRg {
+	font-family: "itcfranklingothic_lt_bookcpRg", Helvetica, Arial, sans-serif;
+}
+.dancing {
+	font-family: 'Dancing Script', cursive;
+}
+/***************************************************************************************
+* HELPERS
+***************************************************************************************/
+.loader {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(assets/ajax-loader.gif)no-repeat center center;
+}
+.clearfix {
+ *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+.clearfix:after {
+	clear: both;
+}
+.gray {
+	background: #e9e9e9;
+}
+.black {
+	background: #000;
+}
+.pink {
+	background: #ff6666;
+}
+.white {
+	background: #fff;
+}
+.text_white {
+	color: #FFF;
+}
+.text_black {
+	color: #000;
+}
+.text_pink {
+	color: #ff6666;
+}
+.height500 {
+	min-height: 500px;
+}
+.height430 {
+	height: 430px;
+}
+.overflow {
+	overflow: hidden;
+}
+.overflow_auto {
+	overflow: auto;
+}
+.indent {
+	text-indent: -10000px;
+}
+.upper {
+	text-transform: uppercase;
+}
+.vertical_align_1_2 {
+	display: table;
+	/*width: 100%;
+	height: 100%;*/	
+	width: 86%;
+	height: 90%;
+	padding: 10% 7% 0;
+	margin: 0 auto;
+}
+.vertical_align_2_2 {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+/* ============= PATTERNS ============= */    
+.absurdidad {
+	background: url('assets/pat/absurdidad.png') repeat;
+}
+.bgnoise_lg {
+	background: url('assets/pat/bgnoise_lg.png') repeat;
+}
+.cloth_alike {
+	background: url('assets/pat/cloth_alike.png') repeat;
+}
+.corrugation {
+	background: url('assets/pat/corrugation.png') repeat;
+}
+.diagonal-noise {
+	background: url('assets/pat/diagonal-noise.png') repeat;
+}
+.fabric_plaid {
+	background: url('assets/pat/fabric_plaid.png') repeat;
+}
+.fancy_deboss {
+	background: url('assets/pat/fancy_deboss.png') repeat;
+}
+.first_aid_kit {
+	background: url('assets/pat/first_aid_kit.png') repeat;
+}
+.graphy {
+	background: url('assets/pat/graphy.png') repeat;
+}
+.grey {
+	background: url('assets/pat/grey.png') repeat;
+}
+.grid_noise {
+	background: url('assets/pat/grid_noise.png') repeat;
+}
+.lightpaperfibers {
+	background: url('assets/pat/lightpaperfibers.png') repeat;
+}
+.linen {
+	background: url('assets/pat/linen.png') repeat;
+}
+.littleknobs {
+	background: url('assets/pat/littleknobs.png') repeat;
+}
+.noise_lines {
+	background: url('assets/pat/noise_lines.png') repeat;
+}
+.noise_pattern {
+	background: url('assets/pat/noise_pattern_with_crosslines.png') repeat;
+}
+.old_mathematics {
+	background: url('assets/pat/old_mathematics.png') repeat;
+}
+.p2 {
+	background: url('assets/pat/p2.png') repeat;
+}
+.p4 {
+	background: url('assets/pat/p4.png') repeat;
+}
+.p5 {
+	background: url('assets/pat/p5.png') repeat;
+}
+.reticular_tissue {
+	background: url('assets/pat/reticular_tissue.png') repeat;
+}
+.shl {
+	background: url('assets/pat/shl.png') repeat;
+}
+.stacked_circles {
+	background: url('assets/pat/stacked_circles.png') repeat;
+}
+.striped_lens {
+	background: url('assets/pat/striped_lens.png') repeat;
+}
+.subtle_white {
+	background: url('assets/pat/subtle_white_feathers.png') repeat;
+}
+.subtlenet2 {
+	background: url('assets/pat/subtlenet2.png') repeat;
+}
+.tileable_wood {
+	background: url('assets/pat/tileable_wood_texture.png') repeat;
+}
+.tiny_grid {
+	background: url('assets/pat/tiny_grid.png') repeat;
+}
+.vichy {
+	background: url('assets/pat/vichy.png') repeat;
+}
+.wavecut {
+	background: url('assets/pat/wavecut.png') repeat;
+}
+.white_bed_sheet {
+	background: url('assets/pat/white_bed_sheet.png') repeat;
+}
+.white_brick_wall {
+	background: url('assets/pat/white_brick_wall.png') repeat;
+}
+.white_carbonfiber {
+	background: url('assets/pat/white_carbonfiber.png') repeat;
+}
+.worn_dots {
+	background: url('assets/pat/worn_dots.png') repeat;
+}
+/*Names*/
+.names {
+	display: none;
+}
+.names.romance {
+	display: inline-block;
+}
+.mail_to.one {
+	padding-right: 80px;
+	}
+.mail_to .icon {
+	display: block;
+	width: 39px;
+	height: 24px;
+	background: transparent url(assets/icons/icon_mailto.png) no-repeat left center;
+	float: left;
+	margin: 0 5px 0 0;
+}
+/***************************************************************************************
+* 1. MAIN NAVIGATION
+***************************************************************************************/
+
+
+.main_navigation {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+	height: 50px;
+	background: #000;
+	border: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	z-index: 3;
+}
+/* ============= CUSTOM BOOTSTRAP =============
+        Nav bar + toggle
+    */
+.main_navigation a:hover,
+ .main_navigation a:focus,
+ .main_navigation a.active,
+ .main_navigation .nav > li > a:hover,
+ .main_navigation .nav > li > a:focus,
+ .main_navigation .navbar-toggle .icon-bar {
+	background: #000 url("assets/nav_triangle_pink.png") no-repeat center bottom;
+}
+.main_navigation .navbar-toggle {
+	border-color: #ff6666;
+}
+.main_navigation .navbar-toggle:hover,
+ .main_navigation .navbar-toggle:focus {
+	background-color: transparent;
+}
+/* ============================================ */
+
+.main_navigation ul#menu_links {
+	list-style: none;
+}
+.main_navigation ul li {
+	display: inline-block;
+	/*outline: 1px solid gold;*/
+	padding-left: 0;
+	padding-right: 0;
+	overflow: hidden;
+}
+.main_navigation ul li a {
+	position: relative;
+	font-family: 'museo_sans500', Helvetica, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #FFF;
+	display: block;
+	text-align: center;
+}
+.navbar-brand span.initials.romance {
+	display:block;
+}
+ @media (max-width: 767px) {
+.main_navigation {
+	position: fixed;
+	top: 0;
+}
+.main_navigation ul#menu_links {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.main_navigation a:hover,
+ .main_navigation a:focus,
+ .main_navigation a.active,
+ .main_navigation .nav > li > a:hover,
+ .main_navigation .nav > li > a:focus,
+ .main_navigation .navbar-toggle .icon-bar {
+	background: #ff6666;
+	color: #fff;
+}
+}
+ @media (min-width: 768px) {
+.main_navigation ul#menu_links {
+	width: 100%;
+}
+}
+/***************************************************************************************
+* 2. WELCOME MESSAGE
+***************************************************************************************/
+
+.cont_welcome {
+	overflow: hidden;
+	height: 100%;
+	background: url('assets/example1_high.jpg') no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+}
+.cont_welcome .cont_img {
+	max-width: 450px;
+	padding: 0 50px 50px 50px;
+	margin: 0 auto;
+}
+.cont_welcome .cont_img img {
+	max-width: 100%;
+}
+ @media (max-width: 767px) {
+.cont_welcome {
+	height: 400px;
+	margin-top: 50px;
+}
+.cont_welcome .cont_img {
+	padding-bottom: 0;
+	padding-top: 0;
+	width: 320px;
+}
+}
+/***************************************************************************************
+* 3. ABOUT THE WEDDING
+***************************************************************************************/
+
+.cont_wedding a {
+	font-family: "museo_sans700", Helvetica, Arial, sans-serif;
+	color: #000;
+}
+.cont_wedding a:hover {
+	color: #000;
+	text-decoration: none;
+}
+.cont_wedding span.glyphicon {
+	display: block;
+	color: #ff6666;
+	font-size: 43px;
+	margin: 10px 0;
+}
+/***************************************************************************************
+* 4. ABOUT US
+***************************************************************************************/
+
+.cont_aboutus p {
+	font-family: "Helvetica", Arial, sans-serif;
+}
+.cont_aboutus span.heart,
+.cont_informacion .heart {
+	background: url("assets/deco_heart_pink.png") no-repeat center center;
+}
+.cont_aboutus span.heart {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	margin: -2px 0 0 10px;
+}
+/***************************************************************************************
+* 5. PHOTO GALLERY
+***************************************************************************************/
+
+.cont_gallery span.glyphicon-camera {
+	padding-right: 10px;
+	font-size: 31px;
+	float: left;
+	margin-top: 7px;
+	color: #fff;
+}
+.cont_gallery .load_more {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px
+}
+.cont_gallery .load_more:hover {
+	color: #fff;
+}
+.cont_gallery .btn {
+	background: transparent;
+	color: #fff;
+	font-family: "museo_sans100", Helvetica, Arial, sans-serif;
+}
+.cont_gallery .btn:hover {
+	color: #000;
+}
+.cont_gallery .btn:focus {
+	box-shadow: none;
+	outline: 0;
+	color: #000;
+}
+.cont_gallery .btn.active {
+	box-shadow: none;
+	color: #000;
+}
+.cont_gallery .filter-options {
+	margin-bottom: 10px;
+}
+.cont_gallery .filter-options p {
+	display: inline-block;
+}
+.cont_gallery .picture-item { /* max-width: 230px; */
+	padding: 0;
+}
+.cont_gallery .picture-item img {
+	width: 100%;
+}
+/***************************************************************************************
+* 6. GIFTS
+***************************************************************************************/
+
+.gift p {
+	font-family: "Helvetica", Arial, sans-serif;
+}
+.title {
+	overflow: hidden;
+	background: url(assets/pink_bow.png) repeat-x center;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.title h2 {
+	display: inline-block;
+	padding: 0 50px;
+	margin: 0 auto;
+}
+ @media (max-width: 767px) {
+.title {
+	margin-bottom: 20px;
+}
+.title h2 {
+	padding: 0 20px;
+}
+}
+.gift .cont_img {
+	text-align: center;
+}
+.gift .cont_img img {
+	width: 100%;
+	max-width: 236px;
+}
+/***************************************************************************************
+* 7. INFORMATION
+***************************************************************************************/
+
+.cont_informacion p {
+	font-family: "Helvetica", Arial, sans-serif;
+}
+.cont_informacion .heart {
+	display: block;
+	width: 100%;
+	height: 35px;
+}
+.cont_informacion .title {
+	margin-bottom: 5px;
+}
+/***************************************************************************************
+* 8. MESSAGE BOX
+***************************************************************************************/
+
+#mensajes {
+}
+.form_box,
+.message_box {
+	height: auto;
+	padding-bottom: 50px;
+}
+/* FORM BOX */
+
+.form_box {
+	position: relative;
+}
+.form_box .form_title {
+	position: absolute;
+	width: 100%;
+	top: -70px;
+	left: 0;
+}
+.form_box .form_title h2 {
+	font-family: "Dancing Script", cursive;
+	color: #ff6666;
+	font-size: 42px;
+	text-align: center;
+}
+ @media (max-width: 991px) {
+.form_box .form_title h2 {
+	font-size: 33px;
+}
+}
+ @media (max-width: 767px) {
+#mensajes {
+	padding-top: 90px;
+	padding-bottom: 50px;
+}
+.form_box .form_title h2 {
+	font-size: 40px;
+}
+}
+.form_box .deco_img {
+	max-width: 278px;
+	width: 100%;
+	margin: 0 auto;
+}
+.form_box .deco_img img {
+	width: 100%;
+}
+.form_box form.to_happycouple {
+	padding: 0 20px;
+	font-family: "itcfranklingothic_lt_bookcpRg", Helvetica, Arial, sans-serif;
+}
+.form_box form.to_happycouple fieldset {
+	margin-bottom: 20px;
+}
+.form_box form.to_happycouple label {
+	font-size: 18px;
+}
+.form_box form.to_happycouple input {
+	background: #f4f4f4;
+	color: #000;
+	border-radius: 0;
+	border: none;
+	box-shadow: none;
+}
+ form.to_happycouple .placehold::-moz-placeholder {
+ font-weight: 700;
+ color: #000;
+ opacity: 1;
+}
+ form.to_happycouple .placehold:-ms-input-placeholder {
+color: #000;
+font-weight: 700;
+}
+ form.to_happycouple .placehold::-webkit-input-placeholder {
+color: #000;
+font-weight: 700;
+}
+form.to_happycouple textarea {
+	background: #f4f4f4;
+	color: #000;
+	border-radius: 0;
+	border: none;
+	box-shadow: none;
+	resize: none;
+}
+form.to_happycouple .form-control:focus,
+ form.to_happycouple button:focus {
+	border-color: transparent;
+	box-shadow: none;
+	outline: transparent;
+}
+form.to_happycouple button:focus {
+	color: #ff6666;
+}
+form.to_happycouple button {
+	background: #fff;
+	color: #ff6666;
+	font-weight: 400;
+	font-size: 25px;
+	padding: 0;
+	position: relative;
+}
+form.to_happycouple button .loading {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	background: url(assets/ajax-loader.gif) no-repeat center center;
+}
+form.to_happycouple button span.glyphicon-play {
+	font-size: 10px;
+	padding-left: 6px;
+	top: -3px;
+}
+form.to_happycouple button:hover {
+	background: #fff;
+	color: #ff6666;
+}
+/* MESSAGE FORM */
+
+.message_box h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+	background: url("assets/envelope_pink.png") no-repeat;
+	padding: 10px 0 25px 80px;
+}
+.message_box p {
+	font-family: "Helvetica", Arial, sans-serif;
+}
+.message_box .msg_box {
+	overflow: auto;
+	height: 472px;
+}
+ul.each {
+	list-style: none;
+	padding: 0;
+}
+ul.each li {
+	background: url(assets/pink_bow.png) repeat-x top;
+	padding: 20px 0 15px 0;
+	position: relative;
+}
+ul.each li span.heart {
+	background: url("assets/deco_heart_pink.png") no-repeat 0 center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+ul.each li p {
+	padding: 0 10px 0 50px;
+	margin-bottom: 5px;
+}
+ @media (max-width: 767px) {
+.message_box h2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	padding-top: 0;
+}
+.message_box {
+	height: 255px;
+}
+.message_box .msg_box {
+	height: 170px;
+	padding: 0;
+}
+}
+/***************************************************************************************
+* 9. RSVP
+***************************************************************************************/
+
+.cont_rsvp {
+}
+.cont_rsvp p {
+	color: #fff;
+	font-size: 16px;
+	font-family: "museo_sans100", Helvetica, Arial, sans-serif;
+}
+.cont_rsvp a {
+	font-family: "museo_sans500", Helvetica, Arial, sans-serif;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+}
+.cont_rsvp .cont_img {
+	max-width: 175px; width: 100%; 
+	height: 176px; background: url('./assets/rsvp_romance.png') no-repeat;
+}
+.cont_rsvp .cont_img img {
+	width: 100%;
+}
+/*
+.museo100 { font-family: "museo_sans100", Helvetica, Arial, sans-serif; }
+.museo500 { font-family: "museo_sans500", Helvetica, Arial, sans-serif; }
+*/
+
+/***************************************************************************************
+* 10. FOOTER
+***************************************************************************************/
+
+.cont_footer p {
+	font-family: "Helvetica", Arial, sans-serif;
+	color: #fff;
+	margin: 10px 0;
+	font-size: 12px;
+}
+.cont_footer a {
+	color: #ff6666
+}
+.cont_footer a:hover {
+	text-decoration: underline;
+}
+ @media (max-width: 767px) {
+.cont_footer p.text-left,
+ .cont_footer p.text-right {
+	text-align: center;
+}
+}
+
+/***************************************************************************************
+* 11. CUSTOM FORM ELEMENTS
+***************************************************************************************/
+
+.placehold::-moz-placeholder {
+ color: #ff6666;
+ opacity: 1;
+}
+.placehold:-ms-input-placeholder {
+color: #ff6666;
+}
+.placehold::-webkit-input-placeholder {
+color: #ff6666;
+}
+/***************************************************************************************
+* 12. PARALLAX CLASS
+***************************************************************************************/
+
+.parallax_1 {
+	position: relative;
+	height: 400px;
+	background-attachment: fixed;
+	background-size: 100% auto;
+	background-position: center 60%;
+}
+.parallax_1.low {
+	background-image: url('./assets/example2_low.jpg');
+}
+.parallax_1.high {
+	background-image: url('./assets/example2_high.jpg');
+}
+.love_story {
+	max-width: 564px;
+	width: 100%;
+	margin: 0 auto 0;
+	padding: 270px 50px 0;
+}
+.love_story img {
+	width: 100%;
+}
+ @media (max-width: 767px) {
+.parallax_1 {
+	height: 200px;
+	background-attachment: scroll;
+}
+.love_story {
+	padding-top: 75px;
+}
+}
+
+/***************************************************************************************
+*  SLIDE CLASS
+***************************************************************************************/
+/*
+    #slides {
+      display: none
+    }
+
+    #slides .slidesjs-navigation {
+      margin-top:3px;
+    }
+
+    #slides .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+    }
+
+    #slides .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(./assets/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+*/
