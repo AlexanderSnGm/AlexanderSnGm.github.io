@@ -1040,11 +1040,11 @@ color: #ce9300;
 }
  @media (max-width: 767px) {
 .parallax_1 {
-	height: 200px;
+	height: 350px;
 	background-attachment: scroll;
 }
 .love_story {
-	padding-top: 75px;
+	padding-top: 48px;
 }
 }
 
