@@ -87,11 +87,11 @@ img {
 }
 ::selection {
 	color: #fff;
-	background: #ff6666;
+	background: #ce9300;
 }
 ::-moz-selection {
 color:#fff;
-background:#ff6666;
+background:#ce9300;
 }
 svg:not(:root) {
 	overflow: hidden;
@@ -293,13 +293,13 @@ textarea {
 	line-height: inherit;
 }
 a {
-	color: #ff6666;
+	color: #ce9300;
 	;
 	text-decoration: none;
 }
 a:hover,
 a:focus {
-	color: #ff6666;
+	color: #ce9300;
 	text-decoration: underline;
 }
 a:focus {
@@ -4536,7 +4536,7 @@ a.thumbnail.active {
 	margin-bottom: 20px;
 	border: 1px solid transparent;
 	border-radius: 4px;
-	background: #ff6666 url(assets/alert_icon.png) no-repeat 10px center;
+	background: #ce9300 url(assets/alert_icon.png) no-repeat 10px center;
 	color: #fff;
 }
 .alert h4 {
