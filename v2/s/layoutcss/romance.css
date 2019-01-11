@@ -221,7 +221,7 @@ var {
 }
 .cont_layer .cont_map {
 	position: relative;
-	background: #ff6666;
+	background: #ce9300;
 	/*width: 80%;*/
 	height: 100%;
 	margin: 0 auto;
@@ -238,7 +238,7 @@ var {
 	font-size: 30px;
 }
 .cont_layer .cont_map span.glyphicon-remove-circle {
-	color: #ff6666;
+	color: #ce9300;
 }
 .cont_layer .cont_img span.glyphicon-remove-circle {
 	color: #fff;
@@ -287,7 +287,7 @@ var {
 }
 #rsvp {
 	padding: 100px 0;
-	background: #ff6666 url(assets/backgrounds/rsvp_shadow.png) repeat-x;
+	background: #ce9300 url(assets/backgrounds/rsvp_shadow.png) repeat-x;
 }
  @media (max-width: 767px) {
 #matrimonio,
@@ -354,7 +354,7 @@ var {
 	background: #000;
 }
 .pink {
-	background: #ff6666;
+	background: #ce9300;
 }
 .white {
 	background: #fff;
@@ -366,7 +366,7 @@ var {
 	color: #000;
 }
 .text_pink {
-	color: #ff6666;
+	color: #ce9300;
 }
 .height500 {
 	min-height: 500px;
@@ -552,7 +552,7 @@ var {
 	background: #000 url("assets/nav_triangle_pink.png") no-repeat center bottom;
 }
 .main_navigation .navbar-toggle {
-	border-color: #ff6666;
+	border-color: #ce9300;
 }
 .main_navigation .navbar-toggle:hover,
  .main_navigation .navbar-toggle:focus {
@@ -597,7 +597,7 @@ var {
  .main_navigation .nav > li > a:hover,
  .main_navigation .nav > li > a:focus,
  .main_navigation .navbar-toggle .icon-bar {
-	background: #ff6666;
+	background: #ce9300;
 	color: #fff;
 }
 }
@@ -653,7 +653,7 @@ var {
 }
 .cont_wedding span.glyphicon {
 	display: block;
-	color: #ff6666;
+	color: #ce9300;
 	font-size: 43px;
 	margin: 10px 0;
 }
@@ -795,7 +795,7 @@ var {
 }
 .form_box .form_title h2 {
 	font-family: "Dancing Script", cursive;
-	color: #ff6666;
+	color: #ce9300;
 	font-size: 42px;
 	text-align: center;
 }
@@ -866,11 +866,11 @@ form.to_happycouple .form-control:focus,
 	outline: transparent;
 }
 form.to_happycouple button:focus {
-	color: #ff6666;
+	color: #ce9300;
 }
 form.to_happycouple button {
 	background: #fff;
-	color: #ff6666;
+	color: #ce9300;
 	font-weight: 400;
 	font-size: 25px;
 	padding: 0;
@@ -892,7 +892,7 @@ form.to_happycouple button span.glyphicon-play {
 }
 form.to_happycouple button:hover {
 	background: #fff;
-	color: #ff6666;
+	color: #ce9300;
 }
 /* MESSAGE FORM */
 
@@ -986,7 +986,7 @@ ul.each li p {
 	font-size: 12px;
 }
 .cont_footer a {
-	color: #ff6666
+	color: #ce9300
 }
 .cont_footer a:hover {
 	text-decoration: underline;
@@ -1003,14 +1003,14 @@ ul.each li p {
 ***************************************************************************************/
 
 .placehold::-moz-placeholder {
- color: #ff6666;
+ color: #ce9300;
  opacity: 1;
 }
 .placehold:-ms-input-placeholder {
-color: #ff6666;
+color: #ce9300;
 }
 .placehold::-webkit-input-placeholder {
-color: #ff6666;
+color: #ce9300;
 }
 /***************************************************************************************
 * 12. PARALLAX CLASS
