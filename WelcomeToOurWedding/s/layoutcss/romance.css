@@ -1021,7 +1021,7 @@ color: #ce9300;
 	height: 400px;
 	background-attachment: fixed;
 	background-size: 100% auto;
-	background-position: center 60%;
+	background-position: center 30%;
 }
 .parallax_1.low {
 	background-image: url('./assets/example2_low.jpg');
