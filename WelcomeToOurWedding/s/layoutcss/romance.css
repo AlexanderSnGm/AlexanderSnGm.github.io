@@ -624,8 +624,7 @@ var {
 	max-width: 450px;
 	padding: 0 50px 50px 50px;
 	margin: 0 auto;
-	/* margin-bottom: 50%; */
-    margin-top: -11%; 
+	
 }
 .cont_welcome .cont_img img {
 	max-width: 100%;
@@ -641,6 +640,19 @@ var {
 	width: 320px;
 	margin-bottom: 50%;
     margin-top: -5%;
+}
+}
+ @media (min-width: 500px) {
+.cont_welcome {
+	height: 400px;
+	margin-top: 50px;
+}
+.cont_welcome .cont_img {
+	padding-bottom: 0;
+	padding-top: 0;
+	width: 320px;
+	/* margin-bottom: 50%; */
+    margin-top: -11%; 
 }
 }
 /***************************************************************************************
