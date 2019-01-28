@@ -643,10 +643,10 @@ var {
 }
 }
  @media (min-width: 500px) {
-.cont_welcome {
+/*.cont_welcome {
 	height: 400px;
 	margin-top: 50px;
-}
+}*/
 .cont_welcome .cont_img {
 	padding-bottom: 0;
 	padding-top: 0;
