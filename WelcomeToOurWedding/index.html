@@ -44,6 +44,7 @@ podrás compartir imágenes de tu historia de amor, mapa con el lugar de la boda
                 appendChild(msViewportStyle);
         }
     </script>
+    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,6 +58,8 @@ podrás compartir imágenes de tu historia de amor, mapa con el lugar de la boda
     <div id="main-loading" class="loading main_loader" style="display: none;">
         <span class="spinner"></span>
     </div>
+    <a id="btnSendEmail" href=""></a>
+
     <div id="main-container" style="display: block;">
 
         <div id="wrapper">
@@ -344,13 +347,14 @@ podrás compartir imágenes de tu historia de amor, mapa con el lugar de la boda
                     <div class="row">
                         <div class="col-sm-6">
                             <h3>Los Yoses</h3>
-                            <p> Los Yoses, ubicado al este de San José, de gran variedad gastronómica, lugar donde decidimos iniciar nuestra aventura como pareja y nos llevó a dar el gran paso.                 
+                            <p>
+                                Los Yoses, ubicado al este de San José, de gran variedad gastronómica, lugar donde decidimos iniciar nuestra aventura como pareja y nos llevó a dar el gran paso.
                                 <h3>Escazú</h3>
                             <p>
                                 Escazú es una de las ciudades más relevantes del país, un lugar de bellos atardeceres y una brisa sin igual, por lo que la vista desde el Hotel Mirador Pico Blanco será excepcional.
-                                
-                              
-                                
+
+
+
                             </p>
                         </div>
                         <div class="col-sm-6">
@@ -358,7 +362,7 @@ podrás compartir imágenes de tu historia de amor, mapa con el lugar de la boda
                             <p>
                                 Vintage
 
-                                 </p>
+                            </p>
                             <h3>
                                 Código de Vestimenta
                             </h3>
@@ -464,10 +468,10 @@ podrás compartir imágenes de tu historia de amor, mapa con el lugar de la boda
                                     <fieldset>
                                         <textarea id="tbl_contact_message" class="form-control placehold" rows="7" name="message_message" placeholder="MENSAJE:" required=""></textarea>
                                     </fieldset>
-                                    <button action="javascript:void(0);" id="enviarMensaje" class="btn pull-right">
+                                    <a id="enviarMensaje" href="mailto:someone@yoursite.com?cc=someoneelse@theirsite.com, another@thatsite.com, me@mysite.com&bcc=lastperson@theirsite.com&subject=Big%20News&body=Body-goes-here" class="btn pull-right">
                                         <span id="loading_btn" class="loading" style="display:none;"></span><!--loading-->
                                         ENVIAR<span class="glyphicon glyphicon-play"></span>
-                                    </button>
+                                    </a>
                                 </form>
                             </div>
                         </div>
@@ -543,7 +547,7 @@ podrás compartir imágenes de tu historia de amor, mapa con el lugar de la boda
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-4">
-                            <div class="cont_img">
+                            <div style="cursor:pointer;" class="cont_img" onclick="window.location.replace('https://docs.google.com/forms/d/e/1FAIpQLSfxpp5MziLfafELLEY0fMm-2qPJxJX05JGtAj2lh5jUjS5pdQ/viewform?usp=sf_link');">
                                 <!--<img src="" alt="RSVP">-->
                             </div>
                         </div>
@@ -615,6 +619,18 @@ podrás compartir imágenes de tu historia de amor, mapa con el lugar de la boda
     <script type="text/javascript" src="app_lib/js/utils/detectizr.min.js?v=3"></script>
     <script type="text/javascript" src="app_lib/js/utils/lodash.compat.min.js?v=3"></script>
     <script type="text/javascript" src="app_lib/js/utils/jquery/jquery-1.8.3.min.js?v=3"></script>
+    <script>
+        $(document).ready(function () {
+            $('#enviarMensajenviarMensaje2').click(function () {
+                
+            });
+        });
+
+        function onClickBtn() {
+            $('#btnSendEmail').attr('href', 'mailto:alexandersngm@gmail.com&subject=Mensaje%20para%20los%20novios!&body=introduce%20tu%20mensaje%20aqui');
+            $('#btnSendEmail').click();
+        }
+    </script>
     <script type="text/javascript" src="app_lib/js/utils/jquery/jquery.scrollTo-min.js?v=3"></script>
     <script type="text/javascript" src="app_lib/js/utils/jquery/jquery.history.min.js?v=3"></script>
     <script type="text/javascript" src="app_lib/js/utils/jquery/jquery.shuffle.min.js?v=3"></script>
@@ -631,5 +647,6 @@ podrás compartir imágenes de tu historia de amor, mapa con el lugar de la boda
 
     <script>'undefined' === typeof _trfq || (window._trfq = []); 'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({ 'tccl.baseHost': 'secureserver.net' }), _trfd.push({ 'ap': 'cpsh' }, { 'server': 'p3plcpnl0936' }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script>
     <script src="https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js"></script>
+
 </body>
 </html>
