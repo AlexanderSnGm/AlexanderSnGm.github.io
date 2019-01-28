@@ -629,7 +629,7 @@ podrás compartir imágenes de tu historia de amor, mapa con el lugar de la boda
         function onClickBtn() {
             var uri = $('#tbl_contact_message').val();
             var res = encodeURI(uri);
-            window.location = "mailto:alexandersngm@gmail.com&subject=Mensaje%20para%20los%20novios!&body=" + res;
+            window.location = "mailto:alexandersngm@gmail.com?subject=Mensaje%20para%20los%20novios!&body=" + res;
             //$('#btnSendEmail').click();
         }
     </script>
