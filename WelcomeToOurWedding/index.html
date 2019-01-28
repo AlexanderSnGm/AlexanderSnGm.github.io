@@ -468,7 +468,7 @@ podrás compartir imágenes de tu historia de amor, mapa con el lugar de la boda
                                     <fieldset>
                                         <textarea id="tbl_contact_message" class="form-control placehold" rows="7" name="message_message" placeholder="MENSAJE:" required=""></textarea>
                                     </fieldset>
-                                    <a id="enviarMensaje" href="mailto:someone@yoursite.com?cc=someoneelse@theirsite.com, another@thatsite.com, me@mysite.com&bcc=lastperson@theirsite.com&subject=Big%20News&body=Body-goes-here" class="btn pull-right">
+                                    <a id="enviarMensaje" onclick="onClickBtn();" class="btn pull-right">
                                         <span id="loading_btn" class="loading" style="display:none;"></span><!--loading-->
                                         ENVIAR<span class="glyphicon glyphicon-play"></span>
                                     </a>
@@ -627,8 +627,10 @@ podrás compartir imágenes de tu historia de amor, mapa con el lugar de la boda
         });
 
         function onClickBtn() {
-            $('#btnSendEmail').attr('href', 'mailto:alexandersngm@gmail.com&subject=Mensaje%20para%20los%20novios!&body=introduce%20tu%20mensaje%20aqui');
-            $('#btnSendEmail').click();
+            var uri = $('#tbl_contact_message').val();
+            var res = encodeURI(uri);
+            window.location = "mailto:alexandersngm@gmail.com&subject=Mensaje%20para%20los%20novios!&body=" + res;
+            //$('#btnSendEmail').click();
         }
     </script>
     <script type="text/javascript" src="app_lib/js/utils/jquery/jquery.scrollTo-min.js?v=3"></script>
