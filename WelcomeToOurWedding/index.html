@@ -634,7 +634,7 @@ podrás compartir imágenes de tu historia de amor, mapa con el lugar de la boda
             var uri = $('#tbl_contact_message').val();
             var sendBy = $('#tbl_contact_name').val();
             var res = encodeURI(uri);
-            window.location = "mailto:alexandersngm@gmail.com?subject=" + "Mensaje para los novios de parte de: " + encodeURI(sendBy); + "!&body=" + res;
+            window.location = "mailto:alexandersngm@gmail.com?subject=" + encodeURI("Mensaje para los novios de parte de: " + sendBy) + "!&body=" + res;
             //$('#btnSendEmail').click();
         }
     </script>
