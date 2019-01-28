@@ -194,8 +194,12 @@ podrás compartir imágenes de tu historia de amor, mapa con el lugar de la boda
                                 <span class="heart second"></span>
                             </h2>
                             <p>
-                                Cuando vi a
-                                <span class="names romance">Alicia</span>   sabia que era para mi, una mujer hermosa, divertida y descomplicada. De esas mujeres que intimidan y no sabia si acercarme o no. Pero me atreví y desde ese día hicimos click. Quiero seguir a su lado todos los dias de mi vida... y que ni la muerte nos separe mi hermosa Alicia porque nos queda mucho por recorrer juntos. A nuestros familiares y amigos los invito que nos acompañen y celebren con nosotros este día tan especial!
+
+                                En ocaciones nos es imposible entender lo caprichoso y maravilloso que puede ser el destino, aunque no entendamos el porqué de nuestros pasos, sabemos que nada en esta vida ocurre sin razón alguna, por lo general solemos llamarlo "coincidencia". Pues para mi, Alicia es mi más bella coincidencia y no podria desear mejor copiloto en mi vida más que la misma mujer por la que tanto habia anelado en mis sueños y oraciones. 
+                                <!--Solo he de decir que me siento más que afortunado puesto que no todos los días podemos decir que Dios hizo realidad nuestras plegarias, en mi caso se lució y me envio al amor de mi vida.--> 
+                                Atesoro cada bello momento junto a ella y 
+                                <!--estoy seguro que nos esperan muchas nuevas aventuras juntos en el pasar de los años en este nuevo camino que estamos por recorrer.-->
+                                quiero seguir a su lado todos los dias de mi vida... y que ni la muerte nos separe porque nos queda mucho por recorrer juntos. A nuestros familiares y amigos los invito que nos acompañen y celebren con nosotros este día tan especial!
                             </p>
                         </div>
                     </div>
@@ -628,8 +632,9 @@ podrás compartir imágenes de tu historia de amor, mapa con el lugar de la boda
 
         function onClickBtn() {
             var uri = $('#tbl_contact_message').val();
+            var sendBy = $('#tbl_contact_name').val();
             var res = encodeURI(uri);
-            window.location = "mailto:alexandersngm@gmail.com?subject=Mensaje%20para%20los%20novios!&body=" + res;
+            window.location = "mailto:alexandersngm@gmail.com?subject=Mensaje%20para%20los%20novios" + sendBy + "!&body=" + res;
             //$('#btnSendEmail').click();
         }
     </script>
