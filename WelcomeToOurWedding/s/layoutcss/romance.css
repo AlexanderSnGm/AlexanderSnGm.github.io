@@ -624,6 +624,8 @@ var {
 	max-width: 450px;
 	padding: 0 50px 50px 50px;
 	margin: 0 auto;
+	/* margin-bottom: 50%; */
+    margin-top: -11%;
 }
 .cont_welcome .cont_img img {
 	max-width: 100%;
