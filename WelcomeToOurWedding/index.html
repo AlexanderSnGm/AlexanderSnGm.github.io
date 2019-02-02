@@ -605,7 +605,10 @@
             var uri = $('#tbl_contact_message').val();
             var sendBy = $('#tbl_contact_name').val();
             var res = encodeURI(uri);
-            window.location = "mailto:alexandersngm@gmail.com?subject=" + encodeURI("Mensaje para los novios de parte de: " + sendBy) + "!&body=" + res;
+            var email = $('#tbE_contact_email').val();
+            if (uri != "" && sendBy != "" && email != "") {
+                window.location = "mailto:alexandersngm@gmail.com?subject=" + encodeURI("Mensaje para los novios de parte de: " + sendBy) + "!&body=" + res;
+            }
             //$('#btnSendEmail').click();
         }
     </script>
